@@ -12,6 +12,7 @@
 		209B281C1FF6BA52003D2BD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209B281A1FF6BA52003D2BD6 /* Main.storyboard */; };
 		209B281E1FF6BA52003D2BD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209B281D1FF6BA52003D2BD6 /* Assets.xcassets */; };
 		209B28211FF6BA52003D2BD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209B281F1FF6BA52003D2BD6 /* LaunchScreen.storyboard */; };
+		209B282A1FF6BB6C003D2BD6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209B28291FF6BB6C003D2BD6 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		209B281D1FF6BA52003D2BD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		209B28201FF6BA52003D2BD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		209B28221FF6BA52003D2BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		209B28291FF6BB6C003D2BD6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				209B282A1FF6BB6C003D2BD6 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				209B28151FF6BA52003D2BD6 /* Geofencing Regional */,
 				209B28141FF6BA52003D2BD6 /* Products */,
+				209B28281FF6BB6C003D2BD6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				209B28221FF6BA52003D2BD6 /* Info.plist */,
 			);
 			path = "Geofencing Regional";
+			sourceTree = "<group>";
+		};
+		209B28281FF6BB6C003D2BD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				209B28291FF6BB6C003D2BD6 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +109,14 @@
 					209B28121FF6BA52003D2BD6 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
